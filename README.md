@@ -1,20 +1,19 @@
 # w5d2: [Rails Lite!][description]
 
-## Using The Specs
+## About
 
-Some specs have been written to guide you towards the lite. There are
-rspec specs in the `spec` directory and demo servers for you to try
-in the `bin` directory.
+An exploration project to explore the inner workings of Rails using a WEBrick web-server and Ruby metaprogramming abilities such as binding, etc.
 
-## Suggested Order
+## Folder organization
 
-0.  `bundle exec rspec spec/p02_controller_spec.rb`
-0.  `bundle exec rspec spec/p03_template_spec.rb`
-0.  `bundle exec rspec spec/p04_session_spec.rb`
-0.  `bundle exec rspec spec/p05_params_spec.rb`
-0.  `bundle exec rspec spec/p06_router_spec.rb`
-0.  `bundle exec rspec spec/p07_integration_spec.rb`
+**bin**
 
-Run `bundle exec rspec` to run all the spec files.
+* these files set up the server
 
-[description]: https://github.com/appacademy/rails-curriculum/blob/master/projects/w5d2-rails-lite-i.md
+**lib**
+
+* these files set up the controller
+
+**views**
+
+* all ERB templates needed for TDD testing
