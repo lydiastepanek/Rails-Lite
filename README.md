@@ -1,4 +1,4 @@
-# w5d2: [Rails Lite!][description]
+# Rails Lite!
 
 ## About
 
