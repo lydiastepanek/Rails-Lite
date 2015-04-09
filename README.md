@@ -1,4 +1,4 @@
-# Rails Lite!
+# Rails Lite
 
 ## About
 
