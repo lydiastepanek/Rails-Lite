@@ -2,13 +2,8 @@ require 'uri'
 
 module Phase5
   class Params
-    # use your initialize to merge params from
-    # 1. query string
-    # 2. post body
-    # 3. route params
-    #
-    # You haven't done routing yet; but assume route params will be
-    # passed in as a hash to `Params.new` as below:
+
+
     def initialize(req, route_params = {})
       @params = route_params
       if req.query_string
@@ -31,6 +26,7 @@ module Phase5
     # require 'uri'
     # uri = URI("http://www.bing.com/search?q=x")
     # URI::decode_www_form(uri.query)
+    # this is shorter: "http://www.bing.com/search?q=x"
     def parse_www_encoded_form(www_encoded_form)
       params = Hash.new
       if www_encoded_form
@@ -45,7 +41,7 @@ module Phase5
             temp_hash[last_key] = val
             val = temp_hash
           end
-          # best way to combine these 2 temp hashes?
+          # use deep_merge to combine these 2 temp hashes
           # {"user"=>{"address"=>{"street"=>"main"}}}
           # {"user"=>{"address"=>{"zip"=>"89436"}}}
           params = params.deep_merge(temp_hash)
