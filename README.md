@@ -2,7 +2,7 @@
 
 ## About
 
-An exploration project to explore the inner workings of Rails using a WEBrick web-server and Ruby metaprogramming abilities such as binding, etc.
+An exploration project to explore the inner workings of Rails using a WEBrick web-server and Ruby metaprogramming.
 
 ## Folder organization
 
